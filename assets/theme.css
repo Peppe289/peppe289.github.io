@@ -1,5 +1,63 @@
-h1 { font-size: 20px; color: white;}
-p { font-size: 16px; background-color: white; text-align: center;}
-h3 { background-color: white; color: green; font-size: 16px;}
-.main {background-color: white;}
-body {background-color: white;}
+h1 {
+    font-size: 30px;
+    color: rgb(32, 131, 243);
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    text-decoration-color: white;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(173, 164, 30);
+}
+
+#conteiner {
+    width: 20%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.social1 {
+    transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-property: transform;
+    -ms-transition-property: -ms-transform;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    overflow: hidden;
+    text-align: center;
+    float: left;
+    width: 50%;
+}
+
+.social2 {
+    transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-property: transform;
+    -ms-transition-property: -ms-transform;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    overflow: hidden;
+    text-align: center;
+    float: right;
+    width: 50%;
+}
+
+.bounce:hover {
+    -ms-transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.2,1.2);
+    -moz-transform: scale(1.1,1.1);
+    -o-transform: scale(1.1,1.1);
+}
+
