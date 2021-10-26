@@ -7,6 +7,13 @@ h1 {
     margin: 0 auto;
 }
 
+#pulsante {
+    background-color: rgb(241, 241, 241);
+    margin: 0 auto;
+    text-align:center;
+    float: right;
+}
+
 h2 {
     width: auto;
     height: auto;
