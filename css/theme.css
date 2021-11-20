@@ -24,14 +24,24 @@ h2 {
     margin: 0 auto;
 }
 
+span {
+    background-color: rgb(65, 65, 65);
+}
+
 p {
-    font-size: 16px;
+    margin: auto;
+    width: fit-content;
+    font-size: 19px;
+    color: white;
     text-decoration-color: white;
     text-align: center;
 }
 
 body {
-    background-color: rgb(173, 164, 30);
+    background-image: url('../assets/body_wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 #conteiner {
