@@ -50,11 +50,15 @@ button {
     box-shadow: 0 4px 16px rgba(0,0,0,.6);
 }
 
+#pulsante {
+    height: 41px;
+    width: 62px;
+    float: right;
+}
+
 .transtalte {
-    height: 40px;
-    width: 60px;
-    margin-right: -50px;
-    margin-top: 13px;
+    height: 41px;
+    width: 62px;
 }
 
 /*

@@ -106,6 +106,16 @@
 
 @media only screen and (max-width: 800px) {
 
+    .link-ref {
+        font-size: 12px;
+        height: fit-content;
+    }
+
+    .social {
+        font-size: 19px;
+        width: 300px;
+    }
+
     .max-box {
         width: 80%;
         height: 180px;
