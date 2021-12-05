@@ -50,10 +50,12 @@
     border: none;
     background-color: rgb(248, 196, 26);
     width: 100px;
+    height: 16px;
     color: black;
     border-radius: 30px 30px 30px 30px;
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
+    margin-bottom: 1%;
 
     transition-duration: 1s;
     -ms-transition-duration: 1s;
@@ -83,7 +85,7 @@
 
 .max-box {
     width: 50%;
-    height: 150px;
+    height: 170px;
     text-align: center;
 }
 
@@ -100,6 +102,44 @@
 .third {
     margin-top: 40px;
     float: left;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .max-box {
+        width: 80%;
+        height: 180px;
+        text-align: center;
+    }
+
+    .first {
+        margin-top: 4%;
+        float: none;
+        display: inline-block;
+        clear: both;
+    }
+    
+    .second {
+        margin-top: 4%;
+        float: none;
+        display: inline-block;
+        clear: both;
+    }
+
+    .third {
+        margin-top: 4%;
+        float: none;
+        display: inline-block;
+        clear: both;
+    }
+
+    .description {
+        height: 700px;
+    }
+
+    .description {
+        text-align: center;
+    }
 }
 
 .mini-box {
