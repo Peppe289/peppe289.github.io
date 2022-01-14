@@ -38,13 +38,6 @@
     background-color: white;
 }
 
-@media only screen and (max-width: 1000px) {
-    .main-2 {
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-}
-
 @media only screen and (max-width: 800px) {
     .card-content {
         width: 400px;
