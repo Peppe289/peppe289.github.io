@@ -1,0 +1,38 @@
+.navbar {
+    height: 60px;
+    background-color: rgb(162, 247, 166);
+    border-radius: 40px;
+    position: fixed;
+    top: 20px;
+    left: 40px;
+    right: 40px;
+    z-index:999999;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+    width: 300px;
+    padding-right: 10px;
+}
+
+.device {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .PC {
+        display: none;
+    }
+
+    .device {
+        display: inline;
+    }
+
+    .right {
+        width: 80px;
+    }
+}
