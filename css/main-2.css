@@ -1,0 +1,61 @@
+.main-2 {
+    padding-top: 40px;
+    padding-left: 30%;
+    padding-right: 30%;
+    height: fit-content;
+}
+
+.left-box {
+    float: left;
+    width: 30%;
+}
+
+.right-box {
+    float: right;
+    width: 30%;
+}
+
+.center-box {
+    display: inline-block;
+    margin: 0 auto;
+    width: 30%;
+}
+
+@media only screen and (min-width: 1450px) {
+    .center-box {
+        padding-left: 5%;
+        padding-right: 5%;
+    }   
+}
+
+@media only screen and (max-width: 1450px) {
+
+    .main-2 {
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+
+    .right-box {
+        margin: 4%;
+        width: 90%;
+        height: max-content;
+        float: none;
+        display: inline-block;
+    }
+
+    .left-box {
+        margin: 4%;
+        width: 90%;
+        height: max-content;
+        float: none;
+        display: inline-block;
+    }
+
+    .center-box {
+        margin: 4%;
+        width: 90%;
+        height: max-content;
+        float: none;
+        display: inline-block;
+    }
+}
