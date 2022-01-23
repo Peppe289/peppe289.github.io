@@ -9,3 +9,7 @@
     bottom: 0;
     z-index: -1;
 }
+
+body {
+    background-color: rgb(79, 102, 235);
+}
