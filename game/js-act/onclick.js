@@ -1,12 +1,28 @@
 var turno = 0;
 var index_colonne;
 var index_righe;
+var winner;
+
+function restartgame(){
+    winner = "NULL";
+    index_colonne = "NULL";
+    index_righe = "NULL";
+    turno = 0;
+
+    for (var i = 0; i != 9; ++i) {
+        ++i;
+        let SelectID = "posto-" + i.toString();
+        document.getElementById(SelectID).innerHTML = "";
+        --i;
+    }
+}
 
 function checkinput() {
     var test = index_colonne;
     var pos = 0;
 
-    if (test != "NULL") {
+    if (test != "NULL" && winner != "Tris") {
+        open = 0;
         var input = parseInt(test);
         test = index_righe;
         if (test != "NULL") {
@@ -33,8 +49,92 @@ function checkinput() {
                     document.getElementById(SelectID).innerHTML = "O";
                 else
                     document.getElementById(SelectID).innerHTML = "X";
+
+                if (document.getElementById("posto-1").innerHTML == "X" || document.getElementById("posto-1").innerHTML == "O") {
+                    if (document.getElementById("posto-1").innerHTML == document.getElementById("posto-2").innerHTML) {
+                        if (document.getElementById("posto-2").innerHTML == document.getElementById("posto-3").innerHTML) {
+                            document.getElementById("status").innerHTML = "Tris";
+                        }
+                    }
+                }
+
+                if (document.getElementById("posto-4").innerHTML == "X" || document.getElementById("posto-4").innerHTML == "O") {
+                    if (document.getElementById("posto-4").innerHTML == document.getElementById("posto-5").innerHTML) {
+                        if (document.getElementById("posto-5").innerHTML == document.getElementById("posto-6").innerHTML) {
+                            document.getElementById("status").innerHTML = "Tris";
+                        }
+                    }
+                }
+
+                if (document.getElementById("posto-7").innerHTML == "X" || document.getElementById("posto-7").innerHTML == "O") {
+                    if (document.getElementById("posto-7").innerHTML == document.getElementById("posto-8").innerHTML) {
+                        if (document.getElementById("posto-8").innerHTML == document.getElementById("posto-9").innerHTML) {
+                            document.getElementById("status").innerHTML = "Tris";
+                        }
+                    }
+                }
+
+                if (document.getElementById("posto-1").innerHTML == "X" || document.getElementById("posto-1").innerHTML == "O") {
+                    if (document.getElementById("posto-1").innerHTML == document.getElementById("posto-4").innerHTML) {
+                        if (document.getElementById("posto-4").innerHTML == document.getElementById("posto-7").innerHTML) {
+                            document.getElementById("status").innerHTML = "Tris";
+                        }
+                    }
+                }
+
+                if (document.getElementById("posto-2").innerHTML == "X" || document.getElementById("posto-2").innerHTML == "O") {
+                    if (document.getElementById("posto-2").innerHTML == document.getElementById("posto-5").innerHTML) {
+                        if (document.getElementById("posto-5").innerHTML == document.getElementById("posto-8").innerHTML) {
+                            document.getElementById("status").innerHTML = "Tris";
+                        }
+                    }
+                }
+
+                if (document.getElementById("posto-3").innerHTML == "X" || document.getElementById("posto-3").innerHTML == "O") {
+                    if (document.getElementById("posto-3").innerHTML == document.getElementById("posto-6").innerHTML) {
+                        if (document.getElementById("posto-6").innerHTML == document.getElementById("posto-9").innerHTML) {
+                            document.getElementById("status").innerHTML = "Tris";
+                        }
+                    }
+                }
+
+                if (document.getElementById("posto-1").innerHTML == "X" || document.getElementById("posto-1").innerHTML == "O") {
+                    if (document.getElementById("posto-1").innerHTML == document.getElementById("posto-5").innerHTML) {
+                        if (document.getElementById("posto-5").innerHTML == document.getElementById("posto-9").innerHTML) {
+                            document.getElementById("status").innerHTML = "Tris";
+                        }
+                    }
+                }
+
+                if (document.getElementById("posto-3").innerHTML == "X" || document.getElementById("posto-3").innerHTML == "O") {
+                    if (document.getElementById("posto-3").innerHTML == document.getElementById("posto-5").innerHTML) {
+                        if (document.getElementById("posto-5").innerHTML == document.getElementById("posto-7").innerHTML) {
+                            document.getElementById("status").innerHTML = "Tris";
+                        }
+                    }
+                }
+
+                winner = document.getElementById("status").innerHTML;
             }
         }
+    }
+
+    if (winner == "Tris") {
+        var nascondi = document.getElementsByClassName('close');
+        var mostra = document.getElementsByClassName('open');
+        for(let i=0; i < nascondi.length; i++){
+            nascondi[i].classList.add("hide");
+            mostra[i].classList.remove("hide");
+        }
+        console.log("OPEN");
+    } else {
+        var nascondi = document.getElementsByClassName('open');
+        var mostra = document.getElementsByClassName('close');
+        for(let i=0; i < nascondi.length; i++){
+            nascondi[i].classList.add("hide");
+            mostra[i].classList.remove("hide");
+        }
+        console.log("OPEN");
     }
 }
 

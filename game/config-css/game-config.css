@@ -44,9 +44,6 @@
     border-right-style: solid;
 }
 
-.overClass {font-weight: bold;   color: red;}
-.outClass  {font-weight: normal; color: black;}
-
 .colonna-3 {
     text-align: center;
     float: right;
