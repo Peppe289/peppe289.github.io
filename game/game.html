@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Peppe289">
+    <meta property="og:title" content="Giuseppe Speranza">
+    <meta name="description" content="Biografia e contatti">
+    <meta property="og:site_name" content="Peppe289">
+    <title>Game</title>
+    <!-- Icona -->
+    <link rel="icon" type="image/x-icon" href="../assets/logo.ico">
+    <!-- Body -->
+    <link rel="stylesheet" type="text/css" href="config-css/body-config.css">
+    <!-- title div -->
+    <link rel="stylesheet" type="text/css" href="config-css/title-config.css">
+    <!-- Game assets -->
+    <link rel="stylesheet" type="text/css" href="config-css/game-config.css">
+    <style>
+        .hide{
+            display: none;
+        }
+    </style>
+    <head>
+        <body>
+            <div class="title">
+                <h1>
+                    Benvenuto nell'area giochi
+                </h1>
+                <h3>
+                    Divertiti a giocare con i tuoi amici!
+                </h3>
+            </div>
+            <div class="game tris" id="tris-righe" style="cursor: pointer;" onclick="checkinput();">
+                <div class="riga-1" id="tris-colonne-riga-1">
+                    <div class="colonna-1" >
+                        <p id="posto-1"></p>
+                    </div>
+                    <div class="colonna-2">
+                        <p id="posto-2"></p>
+                    </div>
+                    <div class="colonna-3">
+                        <p id="posto-3"></p>
+                    </div>
+                </div>
+                <div class="riga-2" id="tris-colonne-riga-2">
+                    <div class="colonna-1" >
+                        <p id="posto-4"></p>
+                    </div>
+                    <div class="colonna-2">
+                        <p id="posto-5"></p>
+                    </div>
+                    <div class="colonna-3">
+                        <p id="posto-6"></p>
+                    </div>
+                </div>
+                <div class="riga-3" id="tris-colonne-riga-3">
+                    <div class="colonna-1" >
+                        <p id="posto-7"></p>
+                    </div>
+                    <div class="colonna-2">
+                        <p id="posto-8"></p>
+                    </div>
+                    <div class="colonna-3">
+                        <p id="posto-9"></p>
+                    </div>
+                </div>                
+            </div>
+            <div>
+                Status:<p id="status">All good</p>
+                Full debug:<p id="full-debug"></p>
+            </div>
+        </body>
+    </head>
+    <script src="js-act/onclick.js"></script>
+</html>

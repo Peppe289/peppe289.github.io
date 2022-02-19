@@ -1,0 +1,55 @@
+.tris {
+    width: 200px;
+    height: 200px;
+    font-size: 23px;
+}
+
+.riga-1 {
+    height: 33%;
+
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+}
+
+.riga-2 {
+    height: 33%;
+
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+}
+
+.riga-3 {
+    height: 33%;
+}
+
+.colonna-1 {
+    float: left;
+    width: 33%;
+    height: 100%;
+    text-align: center;
+    border-right-width: 1px;
+    border-right-color: black;
+    border-right-style: solid;
+}
+
+.colonna-2 {
+    display: inline-block;
+    width: 33%;
+    height: 100%;
+    text-align: center;
+    border-right-width: 1px;
+    border-right-color: black;
+    border-right-style: solid;
+}
+
+.overClass {font-weight: bold;   color: red;}
+.outClass  {font-weight: normal; color: black;}
+
+.colonna-3 {
+    text-align: center;
+    float: right;
+    width: 33%;
+    height: 100%;
+}

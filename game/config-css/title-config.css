@@ -1,0 +1,9 @@
+.tittle {
+    align-content: center;
+    margin: 0 auto;
+    height: fit-content;
+}
+
+h1.tittle, h2.tittle {
+    height: fit-content;
+}

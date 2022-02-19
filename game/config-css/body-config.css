@@ -1,0 +1,12 @@
+body {
+    padding-left: 10%;
+    padding-right: 10%;
+    align-content: center;
+}
+
+@media only screen and (min-width: 1300px) {
+    body {
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+}
