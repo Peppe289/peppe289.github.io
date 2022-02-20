@@ -1,7 +1,15 @@
+.container-principale {
+    background-color: aquamarine;
+    border-radius: 20px;
+    width: 100%;
+    height: fit-content;
+}
+
 body {
     padding-left: 10%;
     padding-right: 10%;
     align-content: center;
+    background-color: rgb(15, 76, 100);
 }
 
 @media only screen and (min-width: 1300px) {
@@ -9,4 +17,8 @@ body {
         padding-left: 30%;
         padding-right: 30%;
     }
+}
+
+.bounce:hover {
+    background-color: rgba(0, 0, 0, 0.082);
 }

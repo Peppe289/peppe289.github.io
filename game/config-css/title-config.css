@@ -1,9 +1,13 @@
-.tittle {
+.title {
     align-content: center;
     margin: 0 auto;
     height: fit-content;
+    border-radius: 16px;
+    background-color: rgb(89, 240, 240);
+    padding-left: 10px;
+    width: 100%;
 }
 
-h1.tittle, h2.tittle {
+h1.title, h2.title {
     height: fit-content;
 }

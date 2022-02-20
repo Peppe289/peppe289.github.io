@@ -31,49 +31,51 @@
                     Divertiti a giocare con i tuoi amici!
                 </h3>
             </div>
-            <div class="game tris" id="tris-righe" style="cursor: pointer;" onclick="checkinput();">
-                <div class="riga-1" id="tris-colonne-riga-1">
-                    <div class="colonna-1" >
-                        <p id="posto-1"></p>
-                    </div>
-                    <div class="colonna-2">
-                        <p id="posto-2"></p>
-                    </div>
-                    <div class="colonna-3">
-                        <p id="posto-3"></p>
-                    </div>
+            <div class="container-principale">
+                <div class="open hide restart" style="height: fit-content; padding-top: 20px;">
+                    <button id="pulsante" style="height: 30px;" onclick="restartgame()">Restart game</button>
                 </div>
-                <div class="riga-2" id="tris-colonne-riga-2">
-                    <div class="colonna-1" >
-                        <p id="posto-4"></p>
-                    </div>
-                    <div class="colonna-2">
-                        <p id="posto-5"></p>
-                    </div>
-                    <div class="colonna-3">
-                        <p id="posto-6"></p>
-                    </div>
+                <div class="close" style="height: 30px; padding-top: 20px;">
                 </div>
-                <div class="riga-3" id="tris-colonne-riga-3">
-                    <div class="colonna-1" >
-                        <p id="posto-7"></p>
+                <div class="game tris" id="tris-righe" style="cursor: pointer;" onclick="checkinput();">
+                    <div class="riga-1" id="tris-colonne-riga-1">
+                        <div class="colonna-1 bounce">
+                            <p id="posto-1"></p>
+                        </div>
+                        <div class="colonna-2 bounce">
+                            <p id="posto-2"></p>
+                        </div>
+                        <div class="colonna-3 bounce">
+                            <p id="posto-3"></p>
+                        </div>
                     </div>
-                    <div class="colonna-2">
-                        <p id="posto-8"></p>
+                    <div class="riga-2" id="tris-colonne-riga-2">
+                        <div class="colonna-1 bounce">
+                            <p id="posto-4"></p>
+                        </div>
+                        <div class="colonna-2 bounce">
+                            <p id="posto-5"></p>
+                        </div>
+                        <div class="colonna-3 bounce">
+                            <p id="posto-6"></p>
+                        </div>
                     </div>
-                    <div class="colonna-3">
-                        <p id="posto-9"></p>
-                    </div>
-                </div>                
-            </div>
-            <div>
-                Status:<p id="status">All good</p>
-                Full debug:<p id="full-debug"></p>
-            </div>
-            <div class="open hide">
-                <button id="pulsante" onclick="restartgame()">Restart game</button>
-            </div>
-            <div class="close">
+                    <div class="riga-3" id="tris-colonne-riga-3">
+                        <div class="colonna-1 bounce">
+                            <p id="posto-7"></p>
+                        </div>
+                        <div class="colonna-2 bounce">
+                            <p id="posto-8"></p>
+                        </div>
+                        <div class="colonna-3 bounce">
+                            <p id="posto-9"></p>
+                        </div>
+                    </div>                
+                </div>
+                <div class="debug">
+                    Status:<p id="status">All good</p>
+                    Full debug:<p id="full-debug">0</p>
+                </div>
             </div>
         </body>
     </head>
