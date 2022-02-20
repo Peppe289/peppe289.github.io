@@ -15,14 +15,21 @@ function restartgame(){
         document.getElementById(SelectID).innerHTML = "";
         --i;
     }
+
+    var nascondi = document.getElementsByClassName('open');
+    var mostra = document.getElementsByClassName('close');
+    for(let i=0; i < nascondi.length; i++){
+        nascondi[i].classList.add("hide");
+        mostra[i].classList.remove("hide");
+    }
+    console.log("OPEN");
 }
 
 function checkinput() {
     var test = index_colonne;
     var pos = 0;
 
-    if (test != "NULL" && winner != "Tris") {
-        open = 0;
+    if (test != "NULL" && winner != "Tris" && winner != "end") {
         var input = parseInt(test);
         test = index_righe;
         if (test != "NULL") {
@@ -50,6 +57,7 @@ function checkinput() {
                 else
                     document.getElementById(SelectID).innerHTML = "X";
 
+                // si, è un pasta code
                 if (document.getElementById("posto-1").innerHTML == "X" || document.getElementById("posto-1").innerHTML == "O") {
                     if (document.getElementById("posto-1").innerHTML == document.getElementById("posto-2").innerHTML) {
                         if (document.getElementById("posto-2").innerHTML == document.getElementById("posto-3").innerHTML) {
@@ -115,11 +123,24 @@ function checkinput() {
                 }
 
                 winner = document.getElementById("status").innerHTML;
+
+
+                var check_counter = 0;
+                for (var i = 0; i != 9; ++i) {
+                    ++i;
+                    let CheckID = "posto-" + i.toString();
+                    if (document.getElementById(CheckID).innerHTML == "O" || document.getElementById(CheckID).innerHTML == "X")
+                        check_counter++;
+                    --i;
+                }
+                if (check_counter == 9)
+                    winner = "end";
+                check_counter = 0
             }
         }
     }
 
-    if (winner == "Tris") {
+    if (winner == "Tris" || winner == "end") {
         var nascondi = document.getElementsByClassName('close');
         var mostra = document.getElementsByClassName('open');
         for(let i=0; i < nascondi.length; i++){
