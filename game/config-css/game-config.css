@@ -25,6 +25,7 @@
     text-align: center;
     margin: 0 auto;
     padding-top: 10%;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .riga-1 {
