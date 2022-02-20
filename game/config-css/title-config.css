@@ -8,6 +8,11 @@
     width: 100%;
 }
 
+.firma {
+    background-color: rgb(205, 243, 155);
+    border-radius: 16px;
+}
+
 h1.title, h2.title {
     height: fit-content;
 }
