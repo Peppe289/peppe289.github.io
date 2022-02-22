@@ -64,51 +64,25 @@ function checkinput() {
                 else
                     document.getElementById(SelectID).innerHTML = "X";
 
-                // si, è un pasta code
-                if (document.getElementById("posto-1").innerHTML == "X" || document.getElementById("posto-1").innerHTML == "O") {
-                    if (document.getElementById("posto-1").innerHTML == document.getElementById("posto-2").innerHTML) {
-                        if (document.getElementById("posto-2").innerHTML == document.getElementById("posto-3").innerHTML) {
-                            document.getElementById("status").innerHTML = "Tris";
+
+                for (var i = 1; i != 10; i = i + 3)
+                {
+                    if (document.getElementById("posto-" + i.toString()).innerHTML == "X" || document.getElementById("posto-" + i.toString()).innerHTML == "O") {
+                        if (document.getElementById("posto-" + i.toString()).innerHTML == document.getElementById("posto-" + (i+1).toString()).innerHTML) {
+                            if (document.getElementById("posto-" + (i+1).toString()).innerHTML == document.getElementById("posto-" + (i+2).toString()).innerHTML) {
+                                document.getElementById("status").innerHTML = "Tris";
+                            }
                         }
                     }
                 }
 
-                if (document.getElementById("posto-4").innerHTML == "X" || document.getElementById("posto-4").innerHTML == "O") {
-                    if (document.getElementById("posto-4").innerHTML == document.getElementById("posto-5").innerHTML) {
-                        if (document.getElementById("posto-5").innerHTML == document.getElementById("posto-6").innerHTML) {
-                            document.getElementById("status").innerHTML = "Tris";
-                        }
-                    }
-                }
-
-                if (document.getElementById("posto-7").innerHTML == "X" || document.getElementById("posto-7").innerHTML == "O") {
-                    if (document.getElementById("posto-7").innerHTML == document.getElementById("posto-8").innerHTML) {
-                        if (document.getElementById("posto-8").innerHTML == document.getElementById("posto-9").innerHTML) {
-                            document.getElementById("status").innerHTML = "Tris";
-                        }
-                    }
-                }
-
-                if (document.getElementById("posto-1").innerHTML == "X" || document.getElementById("posto-1").innerHTML == "O") {
-                    if (document.getElementById("posto-1").innerHTML == document.getElementById("posto-4").innerHTML) {
-                        if (document.getElementById("posto-4").innerHTML == document.getElementById("posto-7").innerHTML) {
-                            document.getElementById("status").innerHTML = "Tris";
-                        }
-                    }
-                }
-
-                if (document.getElementById("posto-2").innerHTML == "X" || document.getElementById("posto-2").innerHTML == "O") {
-                    if (document.getElementById("posto-2").innerHTML == document.getElementById("posto-5").innerHTML) {
-                        if (document.getElementById("posto-5").innerHTML == document.getElementById("posto-8").innerHTML) {
-                            document.getElementById("status").innerHTML = "Tris";
-                        }
-                    }
-                }
-
-                if (document.getElementById("posto-3").innerHTML == "X" || document.getElementById("posto-3").innerHTML == "O") {
-                    if (document.getElementById("posto-3").innerHTML == document.getElementById("posto-6").innerHTML) {
-                        if (document.getElementById("posto-6").innerHTML == document.getElementById("posto-9").innerHTML) {
-                            document.getElementById("status").innerHTML = "Tris";
+                for (var i = 1; i != 4; i++)
+                {
+                    if (document.getElementById("posto-" + i.toString()).innerHTML == "X" || document.getElementById("posto-" + i.toString()).innerHTML == "O") {
+                        if (document.getElementById("posto-" + i.toString()).innerHTML == document.getElementById("posto-" + (i+3).toString()).innerHTML) {
+                            if (document.getElementById("posto-" + (i+3).toString()).innerHTML == document.getElementById("posto-" + (i+6).toString()).innerHTML) {
+                                document.getElementById("status").innerHTML = "Tris";
+                            }
                         }
                     }
                 }
