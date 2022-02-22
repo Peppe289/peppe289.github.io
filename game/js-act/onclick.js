@@ -2,12 +2,19 @@ var turno = 0;
 var index_colonne;
 var index_righe;
 var winner;
+var restart = 0;
 
 function restartgame(){
     winner = "NULL";
     index_colonne = "NULL";
     index_righe = "NULL";
-    turno = 0;
+
+    if (restart % 2 != 0)
+        turno = 0;
+    else
+        turno = 1;
+
+    restart++;
 
     for (var i = 0; i != 9; ++i) {
         ++i;
