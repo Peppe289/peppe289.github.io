@@ -116,10 +116,13 @@
     <script>
         var uagent = navigator.userAgent.toLowerCase();
 
+        const res2 = "2/3";
+        const res3 = ["6,5", "6.5"];
+
         function controlla() {
         var ret = document.getElementById('wiii').value;
         document.getElementById('debug').innerHTML = ret;
-        if (document.getElementById('debug').innerHTML == "2/3") {        
+        if (document.getElementById('debug').innerHTML == res2) {
                 var nascondi = document.getElementsByClassName('step-2');
                 var mostra = document.getElementsByClassName('step-3');
                 for (let i = 0; i < nascondi.length; i++) {
@@ -133,7 +136,7 @@
         function controlla2() {
             var ret = document.getElementById('wee').value;
             document.getElementById('debug').innerHTML = ret;
-            if (document.getElementById('debug').innerHTML == "6,5") {        
+            if (res3.includes(document.getElementById('debug').innerHTML)) {        
                 var nascondi = document.getElementsByClassName('step-3');
                 var mostra = document.getElementsByClassName('fine-gioco');
                 for (let i = 0; i < nascondi.length; i++) {
