@@ -1,0 +1,20 @@
+.new {
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-content: center;
+    background-color: rgb(15, 76, 100);
+}
+
+.container-principale-2 {
+    background-color: aquamarine;
+    border-radius: 20px;
+    height: fit-content;
+}
+
+@media only screen and (min-width: 1300px) {
+    .new {
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+}

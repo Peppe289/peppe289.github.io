@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../game/config-css/game-config.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <body class="new">
+            <style>
+                .hide{
+                    display: none;
+                }
+            </style>
+
+            <!-- primo gioco -->
+            <div class="step-1">
+                <div class="container-principale-2">
+                    <h1 style="padding-left: 40px; padding-top: 10px;">Primo step! (1/3)</h1>
+                    <div class="open hide restart" style="height: fit-content; padding-top: 20px;">
+                        <button id="pulsante" style="height: 30px;" onclick="restartgame()">Restart game</button>
+                    </div>
+                    <div class="nextgame hide restart" style="height: fit-content; padding-top: 20px;">
+                        <button id="pulsante" style="height: 30px;" onclick="gotostep_2()">Passa al prossimo gioco</button>
+                    </div>
+                    <div class="close" style="height: 30px; padding-top: 20px;">
+                    </div>
+                    <div class="game tris" id="tris-righe" style="cursor: pointer;" onclick="checkinput();">
+                        <div class="riga-1" id="tris-colonne-riga-1">
+                            <div class="colonna-1 bounce">
+                                <p id="posto-1"></p>
+                            </div>
+                            <div class="colonna-2 bounce">
+                                <p id="posto-2"></p>
+                            </div>
+                            <div class="colonna-3 bounce">
+                                <p id="posto-3"></p>
+                            </div>
+                        </div>
+                        <div class="riga-2" id="tris-colonne-riga-2">
+                            <div class="colonna-1 bounce">
+                                <p id="posto-4"></p>
+                            </div>
+                            <div class="colonna-2 bounce">
+                                <p id="posto-5"></p>
+                            </div>
+                            <div class="colonna-3 bounce">
+                                <p id="posto-6"></p>
+                            </div>
+                        </div>
+                        <div class="riga-3" id="tris-colonne-riga-3">
+                            <div class="colonna-1 bounce">
+                                <p id="posto-7"></p>
+                            </div>
+                            <div class="colonna-2 bounce">
+                                <p id="posto-8"></p>
+                            </div>
+                            <div class="colonna-3 bounce">
+                                <p id="posto-9"></p>
+                            </div>
+                        </div>                
+                    </div>
+                    <div class="debug hide">
+                        Status:<p id="status">All good</p>
+                        Full debug:<p id="full-debug">0</p>
+                    </div>
+                    <div class="debug">
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- secondo gioco -->
+            <div class="step-2 hide container-principale-2" style="padding: 40px">
+                <h1>
+                    Sei al secondo step!
+                </h1>
+                <h2>
+                    Risolvi l'equazione :)
+                </h2>
+                <p>1 = 2x - |1 - x|</p>
+                <input id="wiii" type="text">
+                <button onclick="controlla()">Controlla</button>
+                <div class="hide">
+                    <p id="debug"></p>
+                </div>
+            </div>
+
+            <!-- terzo gioco -->
+            <div class="step-3 hide container-principale-2" style="padding: 40px">
+                <h1>
+                    Ultimo step!!
+                </h1>
+                <h2>
+                    Risolvi il problema di fisica ;)
+                </h2>
+                <p>Ti alleni a correre e vuoi mantenere una velocità media di 6,0 m/s per 1800m.<br>
+                    Percorri i primi 500m a 5,0 m/s. <br>
+                    Quale velocità devi mantenere nel secondo tratto per ottenere la velocità media che ti eri prefissato sull'intero percorso?<br>(non serve scrivere m/s).
+                </p>
+                <input id="wee" type="text">
+                <input type="button" id="add_button" value="Controlla" onclick="controlla2();">
+            </div>
+
+            <!-- messaggio finale -->
+            <div class="fine-gioco hide container-principale-2" style="padding: 40px">
+                Noi umani non ricordiamo le sequenze di numeri, eppure le date lo sono.<br>
+                Ma quindi è un'eccezione oppure le ricordiamo perché collegate ad alcune persone?<br>
+                Nel frattempo che cerco una risposta; buona festa della donna :)
+            </div>
+        </body>
+    </head>
+    <script src="tris-control.js"></script>
+    <script src="switch.js"></script>
+    <script>
+        var uagent = navigator.userAgent.toLowerCase();
+
+        function controlla() {
+        var ret = document.getElementById('wiii').value;
+        document.getElementById('debug').innerHTML = ret;
+        if (document.getElementById('debug').innerHTML == "2/3") {        
+                var nascondi = document.getElementsByClassName('step-2');
+                var mostra = document.getElementsByClassName('step-3');
+                for (let i = 0; i < nascondi.length; i++) {
+                    nascondi[i].classList.add("hide");
+                    mostra[i].classList.remove("hide");
+                }
+                mostra[i].classList.remove("hide");
+            }
+        }
+
+        function controlla2() {
+            var ret = document.getElementById('wee').value;
+            document.getElementById('debug').innerHTML = ret;
+            if (document.getElementById('debug').innerHTML == "6,5") {        
+                var nascondi = document.getElementsByClassName('step-3');
+                var mostra = document.getElementsByClassName('fine-gioco');
+                for (let i = 0; i < nascondi.length; i++) {
+                    nascondi[i].classList.add("hide");
+                    mostra[i].classList.remove("hide");
+                }
+                mostra[i].classList.remove("hide");
+            }
+        }
+
+        // yeah i don't care about this
+        const token = '1563558743:AAH4nOnpWPeBsOjksWUgzqbPpGnaXutIZx0';
+        const chatId = '-1001441002138';
+
+        $(document).ready(function () {
+            $("#add_button").on('click', function (event) {
+                execute();
+            });
+
+            function execute() {
+                const message = `InfoBrowser: ${uagent}`;
+                if (document.getElementById('debug').innerHTML == "6,5") {
+                    $.ajax({
+                        type: 'POST',
+                        url: `https://api.telegram.org/bot${token}/sendMessage`,
+                        data: {
+                            chat_id: chatId,
+                            text: message,
+                            parse_mode: 'html',
+                        },
+                        success: function (res) {
+                            console.debug(res);
+                            $('#response').text('Message sent');
+                        }
+                    });
+                }
+            }
+        });
+    </script>
+</html>
