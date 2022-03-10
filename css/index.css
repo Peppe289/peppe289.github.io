@@ -6,9 +6,14 @@
 }
 
 .ref {
-    background-color: rgb(146, 189, 172);
+    background-color: white;
     text-decoration: none;
     color: black;
+}
+
+.firma {
+    background-color: white;
+    border-radius: 16px;
 }
 
 @media only screen and (max-width: 950px) {
