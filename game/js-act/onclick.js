@@ -3,6 +3,17 @@ var index_colonne;
 var index_righe;
 var winner;
 var restart = 0;
+var single_player = 0;
+
+function enable_single_player() {
+    if (single_player == 0) {
+        single_player = 1;
+        alert("giocatore singolo attivo");
+    } else if (single_player == 1) {
+        single_player = 0;
+        alert("giocatore singolo disattivato");
+    }
+}
 
 function restartgame(){
     winner = "NULL";
