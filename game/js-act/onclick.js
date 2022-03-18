@@ -180,6 +180,28 @@ function checkinput() {
             }
         }
     }
+
+    check_status();
+
+    if (winner == "Tris" || winner == "end") {
+        var nascondi = document.getElementsByClassName('close');
+        var mostra = document.getElementsByClassName('open');
+        for(let i=0; i < nascondi.length; i++){
+            nascondi[i].classList.add("hide");
+            mostra[i].classList.remove("hide");
+        }
+        console.log("OPEN");
+
+        return;
+    } else {
+        var nascondi = document.getElementsByClassName('open');
+        var mostra = document.getElementsByClassName('close');
+        for(let i=0; i < nascondi.length; i++){
+            nascondi[i].classList.add("hide");
+            mostra[i].classList.remove("hide");
+        }
+        console.log("OPEN");
+    }
 }
 
 var colonne_1 = document.getElementById('tris-colonne-riga-1');
