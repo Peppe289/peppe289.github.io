@@ -4,7 +4,6 @@ var index_righe;
 var winner;
 var restart = 0;
 var single_player = 0;
-var errore;
 
 function enable_single_player() {
     if (single_player == 0) {
@@ -120,9 +119,8 @@ function checkinput() {
             var _checkstatus = document.getElementById(SelectID).innerHTML;
             if (_checkstatus == "X" || _checkstatus == "O") {            
                 document.getElementById("status").innerHTML = "Errore nell'input";
-                errore = 1;
+                return;
             } else {
-                errore = 0;
                 //gestisci i turni
                 turno++;
                 document.getElementById("status").innerHTML = "All good";
@@ -159,7 +157,7 @@ function checkinput() {
     if (single_player == 1) {
         var testing = 0;
         turno++;
-        while (true && !errore) {
+        while (true) {
             var pcMove = Math.floor(Math.random() * 10);
             if (pcMove == 0)
                 continue;
