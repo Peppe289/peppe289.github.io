@@ -22,17 +22,7 @@ async function waitfor() {
         document.getElementById("main").innerHTML = temp;
     }
 
-    var temp1 = 0;
-
-    for (let i = 0; i < 5; ++i) {
-        temp1 = 5 - i;
-        document.getElementById("main").innerHTML = "Fatto! La finestra verra' chiusa tra " + temp1.toString() + " secondi";
-        await sleep(1000);
-    }
-    
-    await sleep(500);
-    // chiudi la finestra
-    window.open('','_self').close();
+    document.getElementById("main").innerHTML = "Fatto!";
 }
 
 waitfor();
