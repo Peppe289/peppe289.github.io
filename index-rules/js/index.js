@@ -22,12 +22,12 @@ async function waitfor() {
 
     for (let i = 0; i < 255; i++) {
         SlowChangeColor("title", i, i, i);
-        await sleep(10);
+        await sleep(5);
     }
 
     for (let i = 0; i < isString.length; i++) {
         document.getElementById("wellcome").innerHTML = document.getElementById("wellcome").innerHTML + isString[i];
-        await sleep(10);
+        await sleep(50);
     }
 
     // configura
@@ -51,7 +51,7 @@ async function waitfor() {
         color = 255 - i;
         SlowChangeColor("wellcome", color, color, color);
         SlowChangeColor("title", color, color, color);
-        await sleep(10);
+        await sleep(8);
     }
 
     await sleep(200);
