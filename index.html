@@ -1,5 +1,7 @@
 <!doctype html>
 <html lang="en">
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,126 +12,79 @@
     <title>Giuseppe Speranza</title>
     <!-- Icona -->
     <link rel="icon" type="image/x-icon" href="assets/logo.ico">
-    <!-- stile per il corpo principale -->
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <!-- Navbar -->
-    <link rel="stylesheet" type="text/css" href="css/navbar.css">
-    <!-- Video in sottofondo per tutto il body -->
-    <link rel="stylesheet" type="text/css" href="css/background.config.css">
-    <!-- 3 box split -->
-    <link rel="stylesheet" type="text/css" href="css/main-2.css">
-    <!-- bounce -->
-    <link rel="stylesheet" type="text/css" href="tool/css/style.css">
-    <head>
-        <body>
+    <link rel="stylesheet" type="text/css" href="index-rules/css/index.css">
+</head>
 
-        <!--
-            <video id="background-video" loop autoplay muted="true"
-            src="https://static.parastorage.com/services/santa-resources/resources/editor/preloader/videoPreloader-1.v2.mp4"></video> -->
+<body id="body">
+    <style>
+        .hide {
+            display: none;
+        }
+    </style>
+    <div id="navbar">
+        <div class="left">
+            <a href="#">
+                <img style="border-radius: 40px;"
+                src="assets/personal.ico.jpg" alt="logo">
+            </a>
+        </div>
+        <div class="right">
+            <a href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
+                alt="instagram">
+            </a>
+            <a href="#">
+                <img src="https://telegram.org/img/t_logo_2x.png"
+                alt="telegram">
+            </a>
+        </div>
+    </div>
+    <div id="main">
+        <h1 id="title">Ciao</h1>
+        <p id="wellcome"></p>
+        <div id="main-link">
+            <a href="https://github.com/Peppe289" class="bounce">
+                <img src="https://github.com/fluidicon.png" alt="GitHub">
+            </a>
+            <a href="https://twitter.com/Peppe2892" class="bounce">
+                <img src="https://abs.twimg.com/responsive-web/client-web/icon-ios.b1fc7275.png" alt="Twitter"
+                    style="border-radius: 40px;">
+            </a>
+            <a href="https://www.reddit.com/user/Peppe289" class="bounce">
+                <img src="https://www.redditstatic.com/desktop2x/img/favicon/apple-icon-120x120.png" alt="Reddit">
+            </a>
+        </div>
+    </div>
+    
+<div id="desc">
+    <a href="game/game.html" class="mini-box hide bounce">
+        <h1>
+            HTML Game.
+        </h1>
+        <p>
+            Divertiti a giocare con i tuoi amici sia da PC che telefono. basta semplicemente avere un browser!
+        </p>
+    </a>
+    <a href="tool/send-message.html" class="mini-box hide bounce">
+        <h1>
+            Scrivimi un messaggio anonimo.
+        </h1>
+        <p>
+            Non verrà letto da nessun altro e non saprò chi è stato ad inviarlo :/
+        </p>
+    </a>
+    <a href="https://rave-project.github.io/" class="mini-box hide bounce">
+        <h1>
+            Developing kernel.
+        </h1>
+        <p>
+            Uno dei miei progetti è lo sviluppo kernel. <br>
+            Software per la gestione delle risorse di un dispositivo.
+        </p>
+    </a>
+</div>
+</body>
 
-            <!-- navbar -->
-            <div class="navbar shadow">
-                <div style="padding-left: 20px;">
-                    <div class="left">
-                        <img src="assets/personal.ico.jpg" alt="G" width="45px" height="45px"
-                        style="padding-top: 7px; padding-bottom: 7px; border-radius: 100%;">
-                    </div>
-                    <div class="right">
-                        <div>
-                            <a href="https://t.me/Peppe289" style="text-decoration: none; float: left; padding-right: 10px;">
-                                <div class="Social-nav">
-                                    <img style="float: left; padding-top: 7px; padding-right: 7px;"
-                                    src="https://telegram.org/img/t_logo_2x.png" width="45px" height="45px" alt="Telegram">
-                                    <p class="forScreenType" style="float:right; width: fit-content;">
-                                        Telegram
-                                    </p>
-                                </div>
-                            </a>
-                            <a href="https://www.instagram.com/gsperanza204/" style="text-decoration: none; float: right; padding-right: 40px;">
-                                <div class="Social-nav">
-                                    <img style="float: left; padding-top: 7px; padding-right: 7px;"
-                                    src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" width="45px" height="45px" alt="Telegram">
-                                    <p class="forScreenType" style="float:right; width: fit-content;">
-                                        Instagram
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- end navbar -->
+<script src="index-rules/js/index.js"></script>
 
-            <div class="main">
-                <div class="card-content shadow" style="font-size: 20px">
-                    <div style="padding: 20px 20px 20px 20px;">
-                        <h1>
-                            Ciao!
-                        </h1>
-                        <p style="padding-top: 10px; height: fit-content;">
-                            Sono Peppe. Sono uno studente e vivo in italia.
-                        </p>
-                        <p style="padding-top: 10px; height: fit-content;">
-                            Mi piace sviluppare software per ambiente Android e Linux<br>
-                            Molti di questi progetti sono opensource!
-                        </p>
-                        <a href="https://github.com/Peppe289" style="text-decoration: none;">
-                            <img class="img-resource" src="https://github.com/fluidicon.png" width="45px" height="45px"
-                            alt="GitHub">
-                        </a>
-                        <a href="https://twitter.com/Peppe2892" style="text-decoration: none;">
-                            <img class="img-resource" src="https://abs.twimg.com/responsive-web/client-web/icon-ios.b1fc7275.png"
-                            style="border-radius: 100%;" width="45px" height="45px" alt="Twitter">
-                        </a>
-                        <a href="https://www.reddit.com/user/Peppe289" style="text-decoration: none;">
-                            <img class="img-resource" src="https://www.redditstatic.com/desktop2x/img/favicon/apple-icon-120x120.png"
-                            style="border-radius: 100%;" width="45px" height="45px" alt="Twitter">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- Qualche altra descrizione -->
-
-            <div class="main-2">
-                <div class="left-box">
-                    <a class="ref" href="https://rave-project.github.io/">
-                        <div class="bounce shadow" style="padding: 20px;">
-                            <h1>
-                                Developing kernel.
-                            </h1>
-                            <p>
-                                Uno dei miei progetti è lo sviluppo kernel. <br>
-                                Software per la gestione delle risorse di un dispositivo.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="center-box">
-                    <a class="ref" href="game/game.html">
-                        <div class="bounce shadow" style="padding: 20px;">
-                            <h1>
-                                HTML Game.
-                            </h1>
-                            <p>
-                                Divertiti a giocare con i tuoi amici sia da PC che telefono. basta semplicemente avere un browser!
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="right-box">
-                    <a class="ref" href="tool/send-message.html">
-                        <div class="bounce shadow" style="padding: 20px;">
-                            <h1>
-                                Scrivimi un messaggio anonimo.
-                            </h1>
-                            <p>
-                                Non verrà letto da nessun altro e non saprò chi è stato ad inviarlo :/
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <!-- end main-2 -->
-        </body>
-    </head>
 </html>

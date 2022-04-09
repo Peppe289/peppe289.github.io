@@ -1,0 +1,128 @@
+body {
+    background-color: black;
+    text-align: center;
+}
+
+#main {
+/*  display: flex;
+    justify-content: center;
+    align-items: center;*/
+    font-family: monospace;
+    width: 600px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+    margin-top: 70px;
+    border-radius: 40px;
+    text-align: center;
+    border-radius: 24px;
+    height: fit-content;
+    box-shadow: 0 4px 16px rgba(0,0,0,.6);
+}
+
+#desc {
+    width: 100%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+    #main {
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+        box-shadow: none;
+    }
+}
+
+#main img, #main a {
+    width: 40px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#main-link {
+    width: 100%;
+    display: none;
+    margin-top: 25px;
+}
+
+#title {
+    width: 100%;
+    margin-bottom: 0px;
+    color: black;
+    display: hide;
+}
+
+#wellcome {
+    width: 100%;
+    display: inline;
+    color: white;
+    font-size: 18px;
+}
+
+#navbar {
+    background-color: green;
+    width: auto;
+    height: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    border-radius: 30px;
+    display: none;
+}
+
+#navbar a {
+    text-decoration: none;
+}
+
+#navbar img {
+    float: none;
+    width: 45px;
+    margin-right: 10px;
+}
+
+.left {
+    height: min-content;
+    margin: 7.5px;
+    margin-left: 10px;
+    float: left;
+}
+
+.right {
+    height: min-content;
+    margin: 7.5px;
+    float: right;
+}
+
+.bounce {
+    transition-duration: 0.6s;
+    -ms-transition-duration: 0.6s;
+    -webkit-transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+    -o-transition-duration: 0.6s;
+    transition-property: transform;
+    -ms-transition-property: -ms-transform;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+}
+
+.bounce:hover {
+    -ms-transform: scale(1.25,1.25);
+    -webkit-transform: scale(1.25,1.25);
+    -moz-transform: scale(1.25,1.25);
+    -o-transform: scale(1.25,1.25);
+}
+
+.mini-box {
+    display: inline-block;
+    border-radius: 24px;
+    box-shadow: 0 4px 16px rgba(0,0,0,.6);
+    background-color: white;
+    color: black;
+    width: 300px; /* is oversize but work lol */
+    margin: 20px;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
