@@ -70,6 +70,13 @@ async function waitfor() {
         await sleep(100);
     }
 
+    var load = document.getElementsByClassName("loader-wrapper");
+    
+    for (let i = 0; i < load.length; i++) {
+        load[i].classList.add("hide");
+        await sleep(100);
+    }
+
 }
 
 waitfor();
