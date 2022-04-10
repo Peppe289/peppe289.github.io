@@ -25,9 +25,13 @@ async function waitfor() {
         await sleep(5);
     }
 
+    var welcome = "";
+
     for (let i = 0; i < isString.length; i++) {
-        document.getElementById("wellcome").innerHTML = document.getElementById("wellcome").innerHTML + isString[i];
+        welcome = document.getElementById("wellcome").innerHTML  + isString[i];
+        document.getElementById("wellcome").innerHTML = document.getElementById("wellcome").innerHTML + isString[i] + "|";
         await sleep(50);
+        document.getElementById("wellcome").innerHTML = welcome;
     }
 
     // configura
@@ -59,11 +63,11 @@ async function waitfor() {
     await sleep(200);
     document.getElementById("main-link").style.display = "inline-block";
 
-
     var desc = document.getElementsByClassName("mini-box");
 
     for (let i = 0; i < desc.length; i++) {
         desc[i].classList.remove("hide");
+        await sleep(100);
     }
 
 }
