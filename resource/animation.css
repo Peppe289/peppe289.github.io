@@ -1,0 +1,9 @@
+.blob {
+    animation: hue-animation 2s alternate infinite;
+}
+
+@keyframes hue-animation {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
