@@ -1,5 +1,6 @@
 #navMenu {
     position: absolute;
+    z-index: 2;
 }
 
 #navMenu > span {
@@ -9,6 +10,13 @@
     border-radius: 9999px;
     background-color: white;
 }
+/*
+.sticky {
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+} */
 
 #navMenu > span:not(:last-child) {
     margin-bottom: 7px;

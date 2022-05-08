@@ -1,0 +1,79 @@
+.card {
+    width: 200px;
+    height: 220px;
+    background-color: transparent;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    display: inline-block;
+    margin: 14px;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+.front, .back {
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+    position: absolute;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    text-align: center;
+    align-self: start;
+}
+
+.instagram {
+    background: linear-gradient(90deg,
+                rgb(180, 58, 170) 0%,
+                rgb(200, 29, 253) 35%,
+                rgba(252, 176, 69) 100%);
+}
+/*
+.telegram {
+    background: linear-gradient(90deg,
+                rgb(3, 184, 255) 0%,
+                rgb(4, 92, 255) 100%);
+} */
+
+.telegram {
+    background: linear-gradient(90deg,
+                rgb(4, 134, 255) 0%,
+                rgb(91, 3, 255) 100%);
+}
+
+.github {
+    background: linear-gradient(90deg,
+                rgb(94, 94, 94) 0%,
+                rgb(17, 17, 17) 100%);
+}
+
+.twitter {
+    background: linear-gradient(90deg,
+                rgb(3, 163, 255) 0%,
+                rgb(4, 21, 255) 100%);
+}
+
+.twitter img {
+    border-radius: 20%;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+}
+
+.back a {
+    text-decoration: none;
+    color: black;
+}
+
+.back .img {
+    border-radius: 50%;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background: #5c9dff;
+}

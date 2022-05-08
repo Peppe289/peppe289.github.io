@@ -2,29 +2,129 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="resource/toggle.css" />
-    <link rel="stylesheet" type="text/css" href="resource/animation.css" />
-    <link rel="stylesheet" type="text/css" href="resource/style.css" />
-    <title>Giuseppe Speranza</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="resource/css/toggle.css" />
+    <link rel="stylesheet" type="text/css" href="resource/css/animation.css" />
+    <link rel="stylesheet" type="text/css" href="resource/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="resource/css/sidebar.css" />
+    <link rel="stylesheet" type="text/css" href="resource/css/flip-card.css" />
+    <link rel="stylesheet" type="text/css" href="resource/css/feature-card.css" />
+    <title>@Peppe289</title>
 </head>
 
 <body>
-    <div style="padding-bottom: 20px; padding-left: 20px; padding-top: 20px; background-color: rgb(50, 50, 50);">
+    <div id="navbar"
+        style="padding-bottom: 40px; padding-left: 20px; padding-top: 20px; background-color: rgb(50, 50, 50);">
         <div id="navMenu">
             <span></span>
             <span></span>
             <span></span>
         </div>
-        <div id="title">
-            Giuseppe Speranza
-        </div>
     </div>
+    <!-- side bar -->
     <div id="sidebar" class="link-ref">
         <h3>Informazioni sul sito</h3>
+        <p>Developed by me with ❤️</p>
         <a href="#"><img class="blob"
                 src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"></a>
     </div>
+
+    <div class="main">
+        <h1>Giuseppe Speranza</h1>
+        <p>Hey sono Peppe, vivo in italia. Sono uno studente appassionato di informatica. nel tempo libero mi piace
+            sviluppare software. Molti di questi progretti sono OpenSource!</p>
+
+
+        <!-- link for webfeature and project -->
+        <div style="width: 100%;">
+
+            <!-- messaggio anonimo -->
+            <div class="feature-card">
+                <img src="img/Message_ico.png">
+                <p>Inviami un messaggio anonimo!</p>
+                <a href="#" style="margin-top: 25px;">Invia!</a>
+            </div>
+
+            <!-- developing android -->
+            <div class="feature-card">
+                <img src="img/Android_ico.png">
+                <p>Visita il mio sito di lavoro</p>
+                <a href="#" style="margin-top: 46px;">Vai!</a>
+            </div>
+
+            <!-- Tris -->
+            <div class="feature-card">
+                <img src="img/Gamepad_ico.png">
+                <p>Gioca a TicTacToe direttamente dal tuo browser!</p>
+                <a href="#" style="margin-top: 0px;">Gioca!</a>
+            </div>
+        </div>
+
+        <!-- link for social -->
+        <h3>Social</h3>
+        <div style="width: 100%;">
+            <!-- instagram -->
+            <div class="card">
+                <div class="front instagram">
+                    <img class="img" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
+                        alt="Instagram">
+                    <h2>Instagram</h2>
+                </div>
+                <div class="back">
+                    <img class="img" src="img/instagram-pic.jpg" alt="Personal profile pic">
+                    <h2><a href="https://www.instagram.com/gsperanza204/">@gsperanza204</a></h2>
+                </div>
+            </div>
+            <!-- instagram -->
+
+            <!-- telegram -->
+            <div class="card">
+                <div class="front telegram">
+                    <img class="img" src="https://web.telegram.org/z/icon-192x192.png" alt="Telegram">
+                    <h2>Telegram</h2>
+                </div>
+                <div class="back">
+                    <img class="img"
+                        src="https://cdn4.telegram-cdn.org/file/Nc0FQe_pPnDSaCAi5RyPiVch8qsxTcoLjctwXEIVb6JWW7dM_uVLPQwPTeXuQx_qNZcC_G5FIrxpaM9qB6D8jaiCryAmE3SkzCW13LzsUkpCe-vngEUzGMmBhfgFkpcxtCS4Yq83pGe0C9AH1GqXjlrU2N777vM3DauvYNZzp0wdr9_xSlGH5F1SpRfAGHpEWUFXKlYieoHOOcbSqzTll-LDilu6CdX2s44f9Qn4urt43HWmnMmNJvSFPX70ZLpKeRU5lDZG6A35UmhSNWfeSGZ03J6Db_8rTkLTGiOIVV4N3z25xsuViFGcCPDfcqFPPHER756-Ja1fkpbSsuDqXQ.jpg"
+                        alt="Personal profile pic">
+                    <h2><a href="https://t.me/Peppe289">@Peppe289</a></h2>
+                </div>
+            </div>
+            <!-- telegram -->
+
+            <!-- github -->
+            <div class="card">
+                <div class="front github">
+                    <img class="img" src="https://github.com/fluidicon.png" alt="GitHub">
+                    <h2>GitHub</h2>
+                </div>
+                <div class="back">
+                    <img class="img" src="https://avatars.githubusercontent.com/u/69747171?v=4"
+                        alt="Personal profile pic">
+                    <h2><a href="https://github.com/Peppe289">@Peppe289</a></h2>
+                </div>
+            </div>
+            <!-- github -->
+
+            <!-- twitter -->
+            <div class="card">
+                <div class="front twitter">
+                    <img class="img" src="https://abs.twimg.com/responsive-web/client-web/icon-ios.b1fc7275.png"
+                        alt="Twitter">
+                    <h2>GitHub</h2>
+                </div>
+                <div class="back">
+                    <img class="img" src="https://pbs.twimg.com/profile_images/1402557118448820224/hkphMqGd_400x400.jpg"
+                        alt="Personal profile pic">
+                    <h2><a href="https://twitter.com/Peppe2892">@Peppe2892</a></h2>
+                </div>
+            </div>
+            <!-- twitter -->
+        </div>
+    </div>
 </body>
-<script src="resource/toggle.js"></script>
+<script src="resource/js/toggle.js"></script>
+<script src="resource/js/sticky.js"></script>
 
 </html>
