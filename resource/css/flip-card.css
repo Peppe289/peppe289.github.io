@@ -59,6 +59,12 @@
     border-radius: 20%;
 }
 
+.reddit {
+    background: linear-gradient(90deg,
+                rgb(231, 146, 146) 0%,
+                rgb(204, 73, 73) 100%);
+}
+
 .img {
     width: 100px;
     height: 100px;
