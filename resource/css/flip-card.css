@@ -65,6 +65,12 @@
                 rgb(204, 73, 73) 100%);
 }
 
+.linkedin {
+    background: linear-gradient(90deg,
+                rgb(164, 171, 255) 0%,
+                rgb(29, 119, 255) 100%);
+}
+
 .img {
     width: 100px;
     height: 100px;
