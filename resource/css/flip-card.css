@@ -76,9 +76,38 @@
     height: 100px;
 }
 
-.back a {
-    text-decoration: none;
-    color: black;
+.back .social-btn {
+    margin-top: 20px;
+    height: 3rem;
+    width: 9rem;
+    border: 3px solid rgb(255, 255, 255);
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+}
+
+.social-btn::before,
+.social-btn::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: inherit;
+    transition: 0.5s ease;
+}
+
+.social-btn::before {
+    left: -15px;
+    top: -15px;
+    border-width: 3px 0 0 3px;
+}
+
+.social-btn::after {
+    right: -15px;
+    bottom: -15px;
+    border-width: 0 3px 3px 0;
 }
 
 .back .img {
