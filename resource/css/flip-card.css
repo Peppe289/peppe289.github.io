@@ -71,6 +71,12 @@
                 rgb(29, 119, 255) 100%);
 }
 
+.whatsapp {
+    background: linear-gradient(225deg,
+    rgb(55, 255, 155) 0%,
+    rgb(8, 255, 41) 100%);
+}
+
 .img {
     width: 100px;
     height: 100px;
