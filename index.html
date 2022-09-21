@@ -20,25 +20,6 @@
 
 <body>
 
-    <div id="WA" style="position: absolute; display: flex; justify-content: center; width: 100%">
-        <div id="OpenWA" class="whatsapp-form">
-            <h1>Richiedi il mio numero di telefono</h1>
-            <p>Per richiedere il mio numero di telefono compila questi campi. Le informazioni saranno lette solo da me. Appena vedrò la tua richiesta ti scriverò io.
-            </p>
-            <div class="form-group">
-                <input type="text" id="name" class="awsome_input" name="name" placeholder="Nome Cognome o altro"
-                    autocomplete="off" />
-                <span class="awsome_input_border"></span>
-                <input text="text" class="awsome_input" id="numero" name="numero"
-                    oninput="this.value = this.value.replace(/[^0-9 +]/g, '').replace(/(\..*?)\..*/g, '$1');"
-                    placeholder="Numero di telefono" autocomplete="off" />
-                <span class="awsome_input_border"></span>
-            </div>
-            <button class="WAButton-close" onclick="compileform()">Chiudi</button>
-            <button class="WAButton" id="invia-messaggio" onclick="execute()">Invia</button>
-        </div>
-    </div>
-
     <div id="navbar">
         <div id="navMenu">
             <span></span>
@@ -183,59 +164,11 @@
                 </div>
             </div>
             <!-- linkedin -->
-
-            <div class="card">
-                <div class="front whatsapp">
-                    <img class="img" src="./img/Whatsapp.png" alt="whatsapp">
-                    <h2>Whatsapp</h2>
-                </div>
-                <div class="back">
-                    <img class="img" src="./img/dog.jpg">
-                    <button class="social-btn" onclick="compileform()">Richidi il Numero</button>
-                </div>
-            </div>
         </div>
     </div>
 </body>
 <script src="resource/js/toggle.js"></script>
 <script src="resource/js/sticky.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-    const banner = document.querySelector("#OpenWA");
-
-    function compileform() {
-        banner.classList.toggle("active");
-    }
-
-    const token = '1563558743:AAHDwVSiAU1w5XFE5OHm3meUJYmizJGu8m0';
-    const chatId = '-1001441002138';
-
-    function execute() {
-        const fname = document.querySelector('#name').value;
-        const num = document.querySelector('#numero').value;
-        const isBrowser = navigator.userAgent.toLowerCase();
-        const message = `* Richiesta numero *\nMittente: ${fname}\nNumero: ${num}\n\nFrom:\n${isBrowser}`;
-
-        $('#invia-messaggio').text('Invio in corso...');
-
-        $.ajax({
-            type: 'POST',
-            url: `https://api.telegram.org/bot${token}/sendMessage`,
-            data: {
-                chat_id: chatId,
-                text: message,
-                parse_mode: 'html',
-            },
-            success: function (res) {
-                console.debug(res);
-                $('#invia-messaggio').text('Messaggio inviato!');
-            },
-            error: function (error) {
-                console.error(error);
-                $('#invia-messaggio').text('Messaggio non inviato!');
-            }
-        });
-    }
-</script>
 
 </html>
