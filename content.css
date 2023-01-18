@@ -1,0 +1,47 @@
+#home {
+    height: 100%;
+    margin: 0;
+    margin-right: 20px;
+    padding: 0;
+}
+
+#home>img {
+    width: 250px;
+    height: max-content;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-left: calc(50% - 125px);
+    margin-right: calc(50% + 125px);
+}
+
+#home>h1 {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    height: max-content;
+}
+
+#home>p {
+    margin: auto;
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    height: max-content;
+}
+
+#home>p>a {
+    text-decoration-color: none;
+    color: white;
+}
+
+#home>ul {
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    margin-left: -30px;
+}
+
+#home>ul>li {
+    list-style:outside;
+}

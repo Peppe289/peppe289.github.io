@@ -1,0 +1,39 @@
+#project {
+    min-height: 100%;
+    height: max-content;
+    margin: 0;
+    margin-right: 20px;
+    padding: 0;
+}
+
+#project>h1 {
+    margin: auto;
+    padding-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+#project>p {
+    margin: auto;
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    height: max-content;
+    max-width: 40%;
+}
+
+#project>p>a {
+    text-decoration-color: none;
+    color: white;
+}
+
+#project>ul {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    margin-left: -30px;
+}
+
+#project>ul>li {
+    list-style:outside;
+}

@@ -2,173 +2,173 @@
 <html>
 
 <head>
+    <!-- Adapt size for mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Peppe289">
-    <meta property="og:title" content="Giuseppe Speranza">
-    <meta name="description" content="Biografia e contatti">
-    <meta property="og:site_name" content="Peppe289">
 
-    <link rel="stylesheet" type="text/css" href="resource/css/toggle.css" />
-    <link rel="stylesheet" type="text/css" href="resource/css/animation.css" />
-    <link rel="stylesheet" type="text/css" href="resource/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="resource/css/sidebar.css" />
-    <link rel="stylesheet" type="text/css" href="resource/css/flip-card.css" />
-    <link rel="stylesheet" type="text/css" href="resource/css/feature-card.css" />
-    <link rel="stylesheet" type="text/css" href="resource/css/WAform.css" />
-    <title>Giuseppe Speranza</title>
+    <!-- Import Sofia Sans from google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,400;1,300&display=swap"
+        rel="stylesheet">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" type="text/css" href="sidebar.css">
+    <link rel="stylesheet" type="text/css" href="content.css">
+    <link rel="stylesheet" type="text/css" href="project.css">
+    <link rel="stylesheet" type="text/css" href="misc.css">
+
+    <title>Peppe289's Website</title>
 </head>
+<style>
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: white;
+        overflow-x: hidden;
+        min-height: max-content;
+        height: 100%;
+        scroll-behavior: smooth;
+    }
+
+    #container {
+        height: 100%;
+    }
+
+    .select-none {
+        /* Safari */
+        -webkit-user-select: none;
+        /* IE 10 and IE 11 */
+        -ms-user-select: none;
+        /* Standard syntax */
+        user-select: none;
+    }
+
+    .google-font {
+        /* Sofia Sans from google font */
+        font-family: 'Sofia Sans';
+        font-size: 21px;
+        color: white;
+    }
+</style>
 
 <body>
-
-    <div id="navbar">
-        <div id="navMenu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-    <!-- side bar -->
-    <div id="sidebar" class="link-ref">
-        <h3>Informazioni sul sito</h3>
-        <p>Developed by me with ❤️</p>
-        <p>Source of this on my <a style="color: white;"
-                href="https://github.com/Peppe289/peppe289.github.io/">GitHub</a></p>
-        <a href="https://www.instagram.com/gsperanza204/">
-            <img class="blob" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"></a>
-        <a href="https://t.me/Peppe289">
-            <img class="blob" src="https://web.telegram.org/z/icon-192x192.png"></a>
-    </div>
-
-    <div class="main">
-        <h1>Giuseppe Speranza</h1>
-        <p>Hey sono Peppe, vivo in italia. Sono uno studente appassionato di informatica. Nel tempo libero mi piace
-            sviluppare software. Molti di questi progretti sono OpenSource!</p>
-
-        <!-- link for webfeature and project -->
-        <div id="other-site">
-            <!-- developing android -->
-            <div class="take-it">
-                <div class="feature-card">
-                    <img src="img/Android_ico.png">
-                    <p>Visita il mio sito di lavoro</p>
-                </div>
-                <button onclick="location.href='https://rave-project.github.io/'">Vai!</button>
+    <!-- Side bar sticky -->
+    <ul id="sidebar">
+        <li>
+            <div class="sidetoggle active select-none" onclick="parent.location='#home-reference'">
+                <img src="resource/home.png">
+                Home
             </div>
-
-            <!-- Tris -->
-            <div class="take-it">
-                <div class="feature-card">
-                    <img src="img/Gamepad_ico.png">
-                    <p>Gioca a TicTacToe direttamente dal tuo browser!</p>
-                </div>
-                <button onclick="location.href='https://peppe289.github.io/TicTacToe/'">Gioca!</button>
+        </li>
+        <li>
+            <div class="sidetoggle select-none" onclick="parent.location='#project-reference'">
+                <img src="resource/project.png">
+                Project
             </div>
+        </li>
+        <li>
+            <div class="sidetoggle select-none" onclick="parent.location='#misc-reference'">
+                <img src="resource/misc.png">
+                Misc
+            </div>
+        </li>
+    </ul>
+
+    <!-- container = FOR FULL BODY BUT WITHOUT SIZE OF SIDE BAR -->
+    <div id="container">
+        <!-- first page -->
+        <div id="home">
+            <a name="home-reference"></a>
+            <img src="resource/personal.png">
+            <h1 class="select-none">Hello!!<br>I'm Giuseppe Speranza</h1>
+            <p class="google-font">I am 18 years old. I live in Italy, in Calabria. IT study at <a
+                    href="https://www.unisa.it/" target="_blank">Unisa</a>.<br>I like the linux world (kernel
+                development) and therefore programming
+                in C/C++.<br>I have also worked with languages like Flutter, Kotlin, Bash and Python.</p>
+
+            <ul class="google-font">Other information:
+                <li>&#128039; <b>Arch</b> Linux User</li>
+                <li>&#128114; I'm working for <b>random projects</b></li>
+                <li>&#128049; I love <b>cat</b></li>
+                <li>&#128237; Ask me anything</li>
+            </ul>
         </div>
 
-        <!-- link for social -->
-        <h3>Social</h3>
-        <div style="width: 100%; padding-bottom: 30px;">
-            <!-- instagram -->
-            <div class="card">
-                <div class="front instagram">
-                    <img class="img" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
-                        alt="Instagram">
-                    <h2>Instagram</h2>
-                </div>
-                <div class="back">
-                    <img class="img" src="img/instagram-pic.jpg" alt="Personal profile pic">
-                    <form action="https://www.instagram.com/gsperanza204/" target="_blank">
-                        <button class="social-btn">@gsperanza204</button>
-                    </form>
-                </div>
-            </div>
-            <!-- instagram -->
+        <!-- second page -->
+        <div id="project">
+            <a name="project-reference"></a>
+            <h1 class="select-none">I love linux!</h1>
+            <p class="google-font">How cool is linux? You have all the open source code, you can interact with the
+                system via kernel nodes, you can choose which resources to compile with, it can even make you coffee!
+            </p>
+            <p class="google-font">
+                This is what I have yielded for my projects (not the coffee). Here you find a module for handling some
+                linux stuff.
+            </p>
+            <h1>RK Manager</h1>
+            <p class="google-font">Program written in python. Just follow the <a
+                    href="https://github.com/Peppe289/RK-Manager#readme">readme on the repository.</a><br>(Have fun
+                blowing up your PC)</p>
+            <h1>Kernel Linux</h1>
+            <p class="google-font">After a few years of development for android kernels I decided to do something for
+                the PC as well. Based on the latest stable I created a <a href="https://github.com/Peppe289/linux">linux
+                    fork</a> with some optimization:</p>
+            <ul class="google-font">
+                <li>Bore Scheduler</li>
+                <li>Add TCP bbr2</li>
+                <li>Ryzen Patch for compiler optimization</li>
+                <li>Other little stuff...</li>
+            </ul>
+            <p class="google-font"><a href="https://github.com/Peppe289/builder-linux#readme">Read more about my
+                    builds</a></p>
+        </div>
 
-            <!-- telegram -->
-            <div class="card">
-                <div class="front telegram">
-                    <img class="img" src="https://web.telegram.org/z/icon-192x192.png" alt="Telegram">
-                    <h2>Telegram</h2>
-                </div>
-                <div class="back">
-                    <img class="img" src="./img/telegram-pic.jpg" alt="Personal profile pic">
-                    <form action="https://t.me/Peppe289" target="_blank">
-                        <button class="social-btn">@Peppe289</button>
-                    </form>
-                </div>
-            </div>
-            <!-- telegram -->
+        <!-- third page -->
+        <div id="misc">
+            <a name="misc-reference"></a>
+            <h1>More about me...</h1>
+            <img
+                src="https://github-readme-stats.vercel.app/api?username=peppe289&&show_icons=true&icon_color=a3a3a3&text_color=ffffff&bg_color=000000">
 
-            <!-- github -->
-            <div class="card">
-                <div class="front github">
-                    <img class="img" src="https://github.com/fluidicon.png" alt="GitHub">
-                    <h2>GitHub</h2>
-                </div>
-                <div class="back">
-                    <img class="img" src="https://avatars.githubusercontent.com/u/69747171?v=4"
-                        alt="Personal profile pic">
-                    <form action="https://github.com/Peppe289" target="_blank">
-                        <button class="social-btn">@Peppe289</button>
-                    </form>
-                </div>
+            <h1>Social Contacts</h1>
+            <div class="google-font">
+                <div class="Telegram social-link select-none" onclick="parent.location='https://t.me/peppe289'">
+                    @Peppe289</div>
+                <div class="Instagram social-link select-none"
+                    onclick="parent.location='https://www.instagram.com/gsperanza204/'">@gsperanza204</div>
+                <div class="Github social-link select-none" onclick="parent.location='https://github.com/Peppe289'">
+                    @Peppe289</div>
+                <div class="Linkedin social-link select-none"
+                    onclick="parent.location='https://www.linkedin.com/in/giuseppe-speranza-88b5ba22a/?'">Linkedin</div>
+                <div class="Reddit social-link select-none"
+                    onclick="parent.location='https://www.reddit.com/user/Peppe289'">r/Peppe289</div>
             </div>
-            <!-- github -->
-
-            <!-- twitter -->
-            <div class="card">
-                <div class="front twitter">
-                    <img class="img" src="https://abs.twimg.com/responsive-web/client-web/icon-ios.b1fc7275.png"
-                        alt="Twitter">
-                    <h2>Twitter</h2>
-                </div>
-                <div class="back">
-                    <img class="img" src="https://pbs.twimg.com/profile_images/1402557118448820224/hkphMqGd_400x400.jpg"
-                        alt="Personal profile pic">
-                    <form action="https://twitter.com/Peppe2892" target="_blank">
-                        <button class="social-btn">@Peppe2892</button>
-                    </form>
-                </div>
-            </div>
-            <!-- twitter -->
-
-            <!-- reddit -->
-            <div class="card">
-                <div class="front reddit">
-                    <img class="img" src="https://www.redditstatic.com/desktop2x/img/favicon/apple-icon-120x120.png"
-                        alt="Reddit">
-                    <h2>Reddit</h2>
-                </div>
-                <div class="back">
-                    <img class="img"
-                        src="https://styles.redditmedia.com/t5_5zm4hg/styles/profileIcon_o6fz3jdwnsm81.jpg?width=256&height=256&crop=256:256,smart&s=4351847cfa4ceae26ad44bd2feb972e1a568b14e"
-                        alt="Personal profile pic">
-                    <form action="https://www.reddit.com/user/Peppe289" target="_blank">
-                        <button class="social-btn">r/Peppe289</button>
-                    </form>
-                </div>
-            </div>
-            <!-- reddit -->
-
-            <!-- linkedin -->
-            <div class="card">
-                <div class="front linkedin">
-                    <img class="img" src="img/linkedin.png" alt="Linkedin">
-                    <h2>Linkedin</h2>
-                </div>
-                <div class="back">
-                    <img class="img" src="img/instagram-pic.jpg" alt="Personal profile pic">
-                    <form action="https://www.linkedin.com/in/giuseppe-speranza-88b5ba22a/" target="_blank">
-                        <button class="social-btn">Giuseppe Speranza</button>
-                    </form>
-                </div>
-            </div>
-            <!-- linkedin -->
         </div>
     </div>
+
 </body>
-<script src="resource/js/toggle.js"></script>
-<script src="resource/js/sticky.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+    /******** Side bar active animation ********/
+    var sidebar = document.getElementsByClassName("sidetoggle");
+    var i;
+    for (i = 0; i < sidebar.length; i++) {
+        sidebar[i].addEventListener("click", function () {
+            // clean up other select class
+            var k = 0;
+            for (k = 0; k != sidebar.length; ++k) {
+                //if (sidebar[k] !== this)
+                sidebar[k].classList.remove("active");
+            }
+            // add active class to select div
+            this.classList.toggle("active");
+        });
+    }
+    /******************* END *******************/
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </html>

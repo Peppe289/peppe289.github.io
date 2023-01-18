@@ -1,0 +1,168 @@
+#misc {
+    height: 100%;
+    margin: 0;
+    margin-right: 20px;
+    padding: 0;
+    text-align: center;
+
+}
+
+#misc>h1 {
+    margin: auto;
+    padding-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+#misc>img {
+    margin: auto;
+    margin-top: 50px;
+    display: block;
+    width: 70%;
+    max-width: 600px;
+}
+
+#misc>div {
+    width: max-content;
+    max-width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 50px;
+    padding: 0;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    overflow: hidden;
+}
+
+.Telegram::after {
+    content: "Telegram";
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg,
+            rgb(4, 134, 255) 0%,
+            rgb(91, 3, 255) 100%);
+    border-radius: 10px;
+    transition: ease-out 0.3s;
+    color: white;
+}
+
+.Telegram:hover::after {
+    content: "Telegram";
+    transform: translateY(-90px);
+    opacity: 0;
+    transition: ease-out 0.8s;
+}
+
+.Instagram::after {
+    content: "Instagram";
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg,
+            rgb(180, 58, 170) 0%,
+            rgb(200, 29, 253) 35%,
+            rgba(252, 176, 69) 100%);
+    border-radius: 10px;
+    transition: ease-out 0.3s;
+    color: white;
+}
+
+.Instagram:hover::after {
+    content: "Instagram";
+    transform: translateY(-90px);
+    opacity: 0;
+    transition: ease-out 0.8s;
+}
+
+.Github::after {
+    content: "GitHub";
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg,
+            rgb(94, 94, 94) 0%,
+            rgb(17, 17, 17) 100%);
+    border-radius: 10px;
+    transition: ease-out 0.3s;
+    color: white;
+}
+
+.Github:hover::after {
+    content: "GitHub";
+    transform: translateY(-90px);
+    opacity: 0;
+    transition: ease-out 0.8s;
+}
+
+.Linkedin::after {
+    content: "Linkedin";
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg,
+            rgb(164, 171, 255) 0%,
+            rgb(29, 119, 255) 100%);
+    border-radius: 10px;
+    transition: ease-out 0.3s;
+    color: white;
+}
+
+.Linkedin:hover::after {
+    content: "Linkedin";
+    transform: translateY(-90px);
+    opacity: 0;
+    transition: ease-out 0.8s;
+}
+
+.Reddit::after {
+    content: "Reddit";
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg,
+                rgb(231, 146, 146) 0%,
+                rgb(204, 73, 73) 100%);
+    border-radius: 10px;
+    transition: ease-out 0.3s;
+    color: white;
+}
+
+.Reddit:hover::after {
+    content: "Reddit";
+    transform: translateY(-90px);
+    opacity: 0;
+    transition: ease-out 0.8s;
+}
