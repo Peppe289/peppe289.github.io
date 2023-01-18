@@ -93,3 +93,14 @@
         width: calc(100% - 220px);
     }
 }
+
+@media only screen and (max-width: 800px) {
+    #sidebar {
+        display: none;
+    }
+
+    #container {
+        margin-left: 10px;
+        width: 100%;
+    }
+}

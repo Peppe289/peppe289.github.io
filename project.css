@@ -35,5 +35,11 @@
 }
 
 #project>ul>li {
-    list-style:outside;
+    list-style: outside;
+}
+
+@media only screen and (max-width: 800px) {
+    #project>p {
+        max-width: 80%;
+    }
 }

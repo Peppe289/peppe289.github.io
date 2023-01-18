@@ -153,8 +153,8 @@
     align-items: center;
     justify-content: center;
     background: linear-gradient(90deg,
-                rgb(231, 146, 146) 0%,
-                rgb(204, 73, 73) 100%);
+            rgb(231, 146, 146) 0%,
+            rgb(204, 73, 73) 100%);
     border-radius: 10px;
     transition: ease-out 0.3s;
     color: white;
@@ -165,4 +165,14 @@
     transform: translateY(-90px);
     opacity: 0;
     transition: ease-out 0.8s;
+}
+
+@media only screen and (max-width: 800px) {
+    #misc>img {
+        display: none;
+    }
+
+    #misc>div {
+        max-width: 90%;
+    }
 }
