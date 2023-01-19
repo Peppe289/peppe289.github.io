@@ -170,16 +170,17 @@
             // clean up other select class
             var k = 0;
             for (k = 0; k != sidebar.length; ++k) {
-                //if (sidebar[k] !== this)
-                sidebar[k].classList.remove("active");
+                if (sidebar[k] === this) {
+                    /*
+                    * I need to put this here becouse 2 funct
+                    * remove and add active class in size bar list.
+                    * I need to update also when i click and not
+                    * use mouse wheel.
+                    */
+                    check_whell = k + 1;
+                }
 
-                /*
-                 * I need to put this here becouse 2 funct
-                 * remove and add active class in size bar list.
-                 * I need to update also when i click and not
-                 * use mouse wheel.
-                 */
-                check_whell = k + 1;
+                sidebar[k].classList.remove("active");
             }
             // add active class to select div
             this.classList.toggle("active");
