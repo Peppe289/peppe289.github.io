@@ -43,11 +43,5 @@
 }
 
 #home>ul>li {
-    list-style: outside;
-}
-
-@media only screen and (max-width: 1200px) {
-    #home>ul>li {
-        list-style: none;
-    }
+    list-style: none;
 }

@@ -35,13 +35,7 @@
 }
 
 #project>ul>li {
-    list-style: outside;
-}
-
-@media only screen and (max-width: 1200px) {
-    #project>ul>li {
-        list-style: none;
-    }
+    list-style: none;
 }
 
 @media only screen and (max-width: 800px) {
