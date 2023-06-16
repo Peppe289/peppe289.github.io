@@ -166,6 +166,30 @@
     transition: ease-out 0.8s;
 }
 
+.Twitter::after {
+    content: "Twitter";
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg,
+            rgb(9, 18, 128) 0%,
+            rgb(0, 102, 255) 100%);
+    border-radius: 10px;
+    transition: ease-out 0.3s;
+    color: white;
+}
+
+.Twitter:hover::after {
+    content: "Twitter";
+    transform: translateY(-90px);
+    opacity: 0;
+    transition: ease-out 0.8s;
+}
+
 @media only screen and (max-width: 800px) {
     #misc>img {
         display: none;
