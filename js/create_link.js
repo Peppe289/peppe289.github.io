@@ -29,7 +29,5 @@ function createlink(click, text, color) {
 }
 
 for (var i = 0; i < social[0].length; ++i) {
-    let html = box.innerHTML;
-    html += createlink(link[i], social[0][i], social[1][i]);
-    box.innerHTML = html;
+    box.innerHTML += createlink(link[i], social[0][i], social[1][i]);
 }
