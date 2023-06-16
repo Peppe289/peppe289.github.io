@@ -1,6 +1,10 @@
 
 const misc = document.getElementById("misc");
 
+const title = document.createElement("h1");
+title.innerText = "Social Contacts";
+misc.append(title);
+
 /**
  * Create div for social button.
  * Append in misc.
