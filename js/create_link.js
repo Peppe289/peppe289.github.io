@@ -14,9 +14,15 @@ box.id = "social-ref";
 box.classList.add("google-font");
 misc.append(box);
 
-const social =
-    [["@Peppe289" /* 0 */, "@gsperanza204"/* 1 */, "@Peppe289" /* 2 */, "Linkedin" /* 3 */, "r/Peppe289" /* 4 */, "@peppe2892" /* 5 */],
-    ["Telegram" /* 0 */, "Instagram" /* 1 */, "Github"/* 2 */, "Linkedin" /* 3 */, "Reddit" /* 4 */, "Twitter" /* 5 */]];
+const social = [
+    /** [ text ], [ css ] **/
+    ["@Peppe289", "Telegram"],
+    ["@gsperanza204", "Instagram"],
+    ["@Peppe289", "Github"],
+    ["Linkedin", "Linkedin"],
+    ["r/Peppe289", "Reddit"],
+    ["@peppe2892", "Twitter"],
+];
 
 let link = [
     'https://t.me/peppe289',                                    // telegram: 0
@@ -32,6 +38,6 @@ function createlink(click, text, color) {
     return '<div class="social-link select-none ' + color + '" onclick="' + parent + '">' + text + '</div>';
 }
 
-for (var i = 0; i < social[0].length; ++i) {
-    box.innerHTML += createlink(link[i], social[0][i], social[1][i]);
+for (var i = 0; i < social.length; ++i) {
+    box.innerHTML += createlink(link[i], social[i][0], social[i][1]);
 }
