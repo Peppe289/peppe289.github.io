@@ -1,9 +1,9 @@
 {
     "project": {
         "rave": {
-            "download": "sourceforge",
-            "channel": "telegram",
-            "application": "sourceforge"
+            "download": "https://sourceforge.net/projects/raverules/files/",
+            "channel": "https://t.me/RaveRelease",
+            "application": "https://sourceforge.net/projects/raverules/files/RaveStuff/"
         }
     },
     "yo": 20
