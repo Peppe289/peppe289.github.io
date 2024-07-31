@@ -1,0 +1,10 @@
+{
+    "project": {
+        "rave": {
+            "download": "sourceforge",
+            "channel": "telegram",
+            "application": "sourceforge"
+        }
+    },
+    "yo": 20
+}
