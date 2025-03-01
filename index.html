@@ -93,7 +93,7 @@
             <a name="home-reference"></a>
             <img src="resource/personal.png">
             <h1>Hello!!<br>I'm Giuseppe Speranza</h1>
-            <p class="google-font">I am 20 years old. I live in Italy, in Calabria. IT study at <a
+            <p class="google-font">I am <span id="age"></span> years old. I live in Italy, in Calabria. IT study at <a
                     href="https://www.unisa.it/" target="_blank">Unisa</a>.<br>I like the linux world (kernel
                 development) and therefore programming
                 in C/C++.<br>I have also worked with languages like Flutter, Kotlin, Bash and Python.</p>
@@ -140,5 +140,19 @@
 <script src="js/whell.js"></script>
 <script src="js/create_link.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    // this statement is used for calculate age
+    let born = new Date("2004-01-21");
+    let today = new Date();
 
+    let eta = today.getFullYear() - born.getFullYear();
+    let mese = today.getMonth() - born.getMonth();
+    let giorno = today.getDate() - born.getDate();
+
+    if (mese < 0 || (mese === 0 && giorno < 0)) {
+        eta--;
+    }
+
+    document.getElementById("age").textContent = eta;
+</script>
 </html>
